@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html leng="en">
+  <head>
+    <title>Registration Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Registraton Form</h1>
+      <p id="description">This is a sample registration sheet</p>
+      <div id="form">
+        <form id="survey-form">
+          <label id="name-label" for="name">Name <br><input type="text" id="name" placeholder="Enter your name" required></label>
+          <label id="email-label" for="email">Email <br><input type="email" id="email" placeholder="Enter your email" required></label>
+          <label id="number-label" for="number">Age <br><input type="number" id="number" min="1" max="99" placeholder="Age"></label>
+          <p>What is your country of residence?</p>
+          <select id="dropdown">
+            <option></option>
+            <option value="poland">Poland</option>
+            <option value="uk">United Kingdoms</option>
+            <option value="germany">Germany</option>
+            <option value="spain">Spain</option>
+            <option value="france">France</option>
+            <option value="italy">Italy</option>
+          </select>
+          <p class="paragraphy">What is your sex?</p>
+          <label for="male" ><input checked value="male" id="male" type="radio" name="sex" > Male</label>
+          <label for="female"><input value="female" type="radio" name="sex" id="female"> Female</label>
+          <label for="other"><input value="other" type="radio" name="sex" id="other"> Other</label>
+          <p class="paragraphy">What languages do you know?</p>
+          <label for="english"><input checked id="english" type="checkbox" value="english"> English</label>
+          <label for="polish"><input id="polish" type="checkbox" value="polish"> Polish</label>
+          <label for="spanish"><input id="spanish" type="checkbox" value="spanish"> Spanish</label>
+          <label for="german"><input id="german" type="checkbox" value="german"> German</label>
+          <label for="french"><input id="french" type="checkbox" value="french"> French</label>
+          <label for="italian"><input id="italian" type="checkbox" value="italian"> Italian</label>
+          <p class="paragraphy">Any comments or suggestions?</p>
+          <textarea rows="6" placeholder="Type it here..."></textarea>
+          <input type="submit" id="submit">
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
